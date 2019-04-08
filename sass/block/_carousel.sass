@@ -1,0 +1,147 @@
+.block
+  &__slide
+    background-image: url(./bg/bg_box_slider.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    padding-top: 35px
+    padding-bottom: 88px
+
+  &__logo
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    margin-bottom: 20px
+
+  &__left
+    width: 50%
+    height: auto
+
+  &__img
+    width: 90%
+    height: auto
+
+  &__right
+    width: 50%
+    height: auto
+    text-align: right
+
+.socseti
+  margin-bottom: 10px
+
+  &__title
+    font-family: Arial, sans-serif
+    font-weight: 400
+    font-size: 12px
+    text-transform: uppercase
+    color: #01983b
+
+  .linkedin, .vk
+    color: #fff
+    padding: 6px
+    border-radius: 50%
+    background-color: #01983b
+    display: inline-block
+    vertical-align: middle
+    line-height: 12px
+    margin-left: 5px
+
+    &:hover
+        color: #fff
+        background-color: #2c2783
+
+.phone
+  text-align: left
+  padding-left: 75px
+  box-sizing: border-box
+
+  a
+    font-family: Arial, sans-serif
+    font-weight: 700
+    font-size: 16px
+    line-height: 18px
+    color: #2c2783
+    position: relative
+
+    &:active
+      color: black
+
+    &:after
+      content: ''
+      position: absolute
+      width: 0%
+      height: 2px
+      background-color: #2c2783
+      display: block
+      bottom: -3px
+      left: 0
+      transition: width 1s
+    &:hover
+      &:after
+        width: 100%
+
+.search
+  &__item
+    border: none
+    border-bottom: 1px solid #bfbdd9
+    background-color: transparent
+    width: 78%
+    outline: none
+    padding: 5px 0
+    padding-left: 10px
+    &:focus
+      border-bottom: 1px solid #01983b
+
+  &__icon
+    color: #2c2783
+    display: inline-block
+    vertical-align: middle
+    margin-left: 10px
+    border: none
+    outline: none
+    background-color: transparent
+    cursor: pointer
+    padding-top: 20px
+
+.fa-search-plus
+  font-size: 20px
+
+.carousel
+  &__img
+    position: relative
+    width: 100%
+    max-height: 493px
+    &::after
+      content: ''
+      position: absolute
+      display: block
+      width: 100%
+      max-height: 88px
+      height: 100%
+      background-image: url(./bg/bg_slider.png)
+      background-repeat: no-repeat
+      background-size: auto
+      background-position: center
+      bottom: -88px
+
+.carousel__item
+  width: 100%
+  height: auto
+
+.carousel__desk
+  position: absolute
+  bottom: 35px
+  left: 0
+  padding: 35px 25px 10px 25px
+  box-sizing: border-box
+  background-color: rgba(0, 0, 0, 0.36)
+  p
+    font-family: 'EuropeExt'
+    font-weight: 400
+    font-size: 30px
+    color: #fff
+    text-transform: uppercase
+  .newenergi
+    font-family: 'EuropeExt'
+    font-weight: 700
+    margin-top: 10px
