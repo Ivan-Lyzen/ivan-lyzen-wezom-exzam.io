@@ -107,10 +107,11 @@
   font-size: 20px
 
 .carousel
+  position: relative
   &__img
     position: relative
     width: 100%
-    max-height: 493px
+    height: 493px
     &::after
       content: ''
       position: absolute
@@ -123,10 +124,55 @@
       background-size: auto
       background-position: center
       bottom: -88px
+  &__pagination
+    position: absolute
+    left: 0
+    bottom: 12px
+    width: 50%
+    height: auto
+    display: flex
+    flex-wrap: nowrap
+    padding-left: 35px
+    box-sizing: border-box
+    cursor: pointer
+
+  &__nav
+    position: absolute
+    width: 100%
+    top: 50%
+    left: 0
+  &__left
+    position: absolute
+    top: 50%
+    left: 30px
+    font-size: 50px
+    cursor: pointer
+    color: #01983b
+
+    &::hover
+      color: #fff
+  &__right
+    position: absolute
+    top: 50%
+    right: 30px
+    font-size: 50px
+    cursor: pointer
+    color: #01983b
+
+    &::hover
+      color: #fff
+
+.pagination__item
+  width: 32px
+  height: 12px
+  background-color: #fff
+  display: block
+  margin-left: 5px
 
 .carousel__item
   width: 100%
-  height: auto
+  height: 100%
+  z-index: 1
 
 .carousel__desk
   position: absolute
@@ -145,3 +191,6 @@
     font-family: 'EuropeExt'
     font-weight: 700
     margin-top: 10px
+
+.carousel__is-active
+  background-color: #01983b
