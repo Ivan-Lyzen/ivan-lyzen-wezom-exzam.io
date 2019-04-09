@@ -265,6 +265,20 @@ ul li {
   position: relative;
 }
 
+.carousel::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 97%;
+  max-height: 88px;
+  height: 100%;
+  background-image: url(./bg/bg_slider.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  bottom: -88px;
+}
+
 .carousel__img {
   position: relative;
   width: 100%;
