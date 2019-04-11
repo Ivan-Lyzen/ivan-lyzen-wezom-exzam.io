@@ -1,0 +1,77 @@
+.pena
+  padding-top: 70px
+  margin-bottom: 30px
+  background-image: url(./bg/bg_pena.png)
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: top
+
+  &__titleBottom
+    margin-top: 0
+    margin-bottom: 20px
+    font-family: 'EuropeExt' , sans-serif
+    font-weight: 700
+    font-size: 30px
+    color: #073d79
+    text-transform: uppercase
+
+  &__video
+    position: relative
+    margin-bottom: 60px
+
+    &::after
+      content: ''
+      position: absolute
+      display: inline-block
+      vertical-align: top
+      min-width: 574px
+      width: 100%
+      height: 79px
+      bottom: -75px
+      left: -17px
+      right: 0
+      margin: 0 auto
+      background-image: url(./bg/bg_videoShadow.png)
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: top
+
+  &__videoIframe
+    position: relative
+
+  &__desc
+    margin-bottom: 45px
+
+    p
+      font-family: 'Arial', sans-serif
+      font-weight: 400
+      font-size: 14px
+      line-height: 17px
+      color: #0a274d
+      b
+        text-transform: uppercase
+
+  &__linckButton
+    font-family: 'EuropeExt', sans-serif
+    font-weight: 700
+    font-size: 24px
+    color: #ffffff
+    text-transform: uppercase
+    background-image: url(./bg/pattern.png)
+    background-size: auto
+    background-repeat: repeat
+    background-position: center
+    background-color: rgba(1, 152, 59, 1)
+    padding: 10px 20px
+    border-radius: 5px
+    display: inline-block
+    vertical-align: top
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5)
+
+    &:hover
+      background-color: rgba(1, 175, 59, 1)
+      box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3)
+
+    &:active
+      background-color: rgba(1, 132, 59, 1)
+      box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 1)
