@@ -4,6 +4,7 @@
   background-size: auto
   background-position: right
   padding-top: 50px
+  padding-bottom: 70px
 
   &__head
     text-align: center
@@ -229,8 +230,13 @@
       height: 110px
       top: 10px
       left: 10px
-      border: 10px solid green
+      border: 10px solid #019a3e
+      border-radius: 20px
+      transform-origin: center
+      -webkit-transform: rotate(45deg)
+      -ms-transform: rotate(45deg)
       transform: rotate(45deg)
+      box-shadow: -1px -1px 0px 3px #8e9091 inset
 
   &__categoriesBg
     width: 100%
@@ -242,3 +248,12 @@
     width: 50%
     height: 50%
     margin: 0 auto
+
+  &__categoriesDesc
+    font-family: 'Arial', sans-serif
+    font-weight: 700
+    font-size: 14px
+    color: #01983b
+    text-transform: uppercase
+    margin-top: 20px
+    margin-bottom: 0

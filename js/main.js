@@ -8,9 +8,5 @@ $('.carousel').slick({
   adaptiveHeight: true,
   fade: true,
   autoplay:true,
-  autoplaySpeed: 4500,
-  // customPaging: function(slider, i) {
-  //   // this example would render "tabs" with titles
-  //   return '<span class="pagination__item"></span>';
-  // }
+  autoplaySpeed: 4500
 });
