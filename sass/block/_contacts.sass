@@ -1,0 +1,51 @@
+.contacts
+  text-align: center
+  background-image: url(./bg/pattern.png)
+  background-repeat: repeat
+  background-size: auto
+  background-position: center
+  background-color: #01983b
+  border-bottom-left-radius: 10px
+  border-bottom-right-radius: 10px
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, .5)
+  position: relative
+  padding-top: 30px
+  padding-bottom: 30px
+  &::after
+    content: ''
+    position: absolute
+    display: block
+    width: 100%
+    height: 10px
+    top: 0
+    left: 0
+    box-shadow: 0px 4px 0px rgba(255, 255, 255, 0.2) inset
+
+  &__titleHead
+    margin: 0
+    font-family: 'EuropeExt', sans-serif
+    font-weight: 700
+    font-size: 30px
+    color: #ffffff
+    text-transform: uppercase
+
+  &__items
+    margin: 16px auto
+  &__item
+    margin: 0
+    font-family: 'Arial', sans-serif
+    font-weight: 400
+    font-size: 18px
+    line-height: 22px
+    color: #ffffff
+  &__link
+    font-family: 'Arial', sans-serif
+    font-weight: 400
+    font-size: 14px
+    color: #ffffff
+    line-height: 30px
+
+.map
+  width: 100%
+  height: auto
+  margin-top: -35px
