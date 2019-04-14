@@ -472,7 +472,11 @@ ul li {
   margin-bottom: 60px;
 }
 
-.pena__video::after {
+.pena__videoIframe {
+  border: 0;
+}
+
+.pena__videoIframe::after {
   content: '';
   position: absolute;
   display: inline-block;
@@ -1207,6 +1211,12 @@ ul li {
   width: 100%;
   height: auto;
   margin-top: -35px;
+}
+
+.map__box {
+  width: 100%;
+  height: 337px;
+  border: 0;
 }
 
 .footer {
