@@ -4,8 +4,9 @@
   background-repeat: no-repeat
   background-size: cover
   background-position: center
-  margin-top: 35px
+  margin-top: 25px
   padding-bottom: 88px
+  position: relative
 
   &__logo
     display: flex
@@ -16,6 +17,7 @@
   &__left
     width: 50%
     height: auto
+
   &__link
     display: inline-block
     vertical-align: top
@@ -32,8 +34,8 @@
     height: auto
     text-align: right
 
-  &__socialNetwork
-    margin-bottom: 10px
+  &__social-network
+    margin-top: 10px
 
   &__title
     font-family: Arial, sans-serif
@@ -51,7 +53,7 @@
     display: inline-block
     vertical-align: middle
     line-height: 12px
-    margin-left: 5px
+    margin-left: 3px
 
     &:hover
         color: #fff
@@ -59,17 +61,16 @@
 
   &__connection
     text-align: left
-    padding-left: 55px
+    padding-left: 70px
     box-sizing: border-box
 
-  &__connectionItem
+  &__connection-item
     font-family: Arial, sans-serif
     font-weight: 700
     font-size: 16px
     line-height: 18px
     color: #2c2783
     position: relative
-    padding-right: 3px
 
     &:active
       color: black
@@ -83,10 +84,23 @@
       display: block
       bottom: -3px
       left: 0
-      transition: width 1s
+      transition: width 300ms
+
     &:hover
       &:after
         width: 100%
+
+  &__shadow
+    position: absolute
+    max-width: 1225px
+    width: 100%
+    height: auto
+    left: 15%
+    bottom: -15px
+
+  &__shadow-img
+    width: 100%
+    height: auto
 
 .search
   &__item
@@ -97,6 +111,7 @@
     outline: none
     padding: 5px 0
     padding-left: 10px
+
     &:focus
       border-bottom: 1px solid #01983b
 
@@ -104,34 +119,41 @@
     color: #2c2783
     display: inline-block
     vertical-align: middle
-    margin-left: 10px
+    margin-left: 3px
     border: none
     outline: none
     background-color: transparent
     cursor: pointer
-    padding-top: 20px
+    padding: 5px 0 0 0
+
+    &:hover
+      color: #01983b
+
 
 .fa-search-plus
   font-size: 20px
 
 .carousel
   position: relative
-  &::after
-    content: ''
-    position: absolute
-    display: block
-    width: 97%
-    max-height: 88px
-    height: 100%
-    background-image: url(./bg/bg_slider.png)
-    background-repeat: no-repeat
-    background-size: auto
-    background-position: center
-    bottom: -88px
+
+  // &::after
+  //   content: ''
+  //   position: absolute
+  //   display: block
+  //   width: 97%
+  //   max-height: 88px
+  //   height: 100%
+  //   background-image: url(./bg/bg_slider.png)
+  //   background-repeat: no-repeat
+  //   background-size: auto
+  //   background-position: center
+  //   bottom: -88px
+
   &__img
     position: relative
     width: 100%
     height: 493px
+
     &::after
       content: ''
       position: absolute
@@ -144,6 +166,7 @@
       background-size: auto
       background-position: center
       bottom: -88px
+
   &__pagination
     position: absolute
     left: 0
@@ -161,6 +184,7 @@
     width: 100%
     top: 50%
     left: 0
+
   &__left
     position: absolute
     top: 50%
@@ -169,8 +193,9 @@
     cursor: pointer
     color: #01983b
 
-    &::hover
+    &:hover
       color: #fff
+
   &__right
     position: absolute
     top: 50%
@@ -179,7 +204,7 @@
     cursor: pointer
     color: #01983b
 
-    &::hover
+    &:hover
       color: #fff
 
   &__desk

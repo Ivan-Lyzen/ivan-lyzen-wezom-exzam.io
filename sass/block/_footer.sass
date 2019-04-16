@@ -16,6 +16,7 @@
     background-size: contain
     background-position: top
     padding-top: 70px
+
   &__logo
     max-width: 500px
     width: 100%
@@ -23,7 +24,7 @@
     margin: 0 auto
     position: relative
 
-  &__innerLogo
+  &__inner-logo
     font-family: 'EuropeExt', sans-serif
     font-weight: 700
     font-size: 40px
@@ -31,7 +32,7 @@
     position: relative
     margin: 0
 
-  &__innerImg
+  &__inner-img
     position: relative
     color: #ffffff
 
@@ -51,7 +52,7 @@
     &:hover
       opacity: .8
 
-  &__copyh
+  &__copyright
     margin: 0
     font-family: 'Arial', sans-serif
     font-weight: 700
@@ -69,6 +70,7 @@
     font-size: 12px
     line-height: 14px
     color: #ffffff
+    margin: 5px 0 5px 0
 
     &-icon
       color: #01983b
@@ -86,14 +88,29 @@
         margin-left: 10px
 
   &__dev
-    padding-top: 100px
-    padding-bottom: 20px
+    padding: 80px 0 20px 0
 
-  &__devLink
+  &__dev-link
     font-family: 'Arial', sans-serif
     font-weight: 700
     font-size: 12px
     color: #ffffff
     text-transform: uppercase
+    position: relative
+
+    &:after
+      content: ''
+      position: absolute
+      width: 0%
+      height: 2px
+      background-color: #2c2783
+      display: block
+      bottom: -3px
+      left: 0
+      transition: width 300ms
+      background-color: #ffffff
+
+
     &:hover
-      opacity: .8
+      &:after
+        width: 100%

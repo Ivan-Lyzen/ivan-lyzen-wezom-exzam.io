@@ -3,18 +3,17 @@
   background-repeat: no-repeat
   background-size: auto
   background-position: right
-  padding-top: 50px
-  padding-bottom: 70px
+  padding: 40px 0 60px 0
   width: 100%
   height: auto
 
   &__head
     text-align: center
-    margin-bottom: 36px
+    margin-bottom: 30px
     width: 100%
     height: auto
 
-  &__headTitle
+  &__title
     font-family: 'EuropeExt', sans-serif
     font-weight: 700
     font-size: 30px
@@ -31,79 +30,106 @@
     height: auto
 
   &__left
-    width: calc(50% - 4px)
+    width: calc(50% - 5px)
     height: auto
-    margin: 0 auto
-    text-align: right
+    margin-right: 5px
     background-image: url(./bg/application-left.jpg)
     background-repeat: no-repeat
     background-position: center
     background-size: cover
 
-  &__leftBgOpasity
+  &__left-bg
     background-color: rgba(0, 0, 0, 0.5)
     height: 100%
     width: 100%
+    position: relative
+
+  &__left-title
+    width: 100%
+    height: auto
+    padding-right: 50px
+    box-sizing: border-box
 
 
-  &__leftSubTitle
+  &__sub-title
     margin: 0
-    padding: 20px 0
+    padding: 20px 0 20px 50px
     font-family: 'Arial', sans-serif
     font-weight: 400
     font-size: 24px
     line-height: 30px
     color: #fff
     text-transform: uppercase
-    padding-right: 50px
-  &__leftList
-    padding-bottom: 154px
+    text-align: right
 
-  &__leftItem
-    display: block
+
+  &__left-list
+    margin-bottom: 180px
+    width: 100%
+    height: auto
+
+  &__left-items
+    text-align: right
+    width: 100%
+    height: auto
+
+  &__left-items,
+  .application__right-items
+    margin: -10px 0 0 0
+    padding: 0
+    width: 100%
+    height: auto
+
+  &__left-item
+    padding-bottom: 3px
+
+    &:last-child
+      margin-bottom: 0
+
+  &__text
+    margin: 0
+    padding: 3px 50px 3px 50px
+    display: inline-block
     font-family: 'Arial', sans-serif
     font-weight: 400
     font-size: 14px
     color: #ffffff
     text-transform: uppercase
     background-color: #01983b
-    margin-bottom: 5px
-    padding: 3px 0
-    padding-right: 50px
     position: relative
 
-    &:first-child
-      margin-left: 68%
-    &:nth-child(2)
-      margin-left: 57%
-    &:nth-child(3)
-      margin-left: 30%
     &::before,
     &::after
       content: ''
       position: absolute
       display: block
-      width: 100px
+      width: 50px
       height: 100%
       background-color: rgba(1, 152, 59, 0.2)
-      left: -95px
+      left: -35px
       top: 0
-    &::after
+    &::before
       background-color: rgba(1, 152, 59, 0.4)
-      margin-left: 48px
+      left: -70px
+      width: 75px
 
-  &__leftLogobg
+  &__left-logo-bg
     background-color: rgba(255, 255, 255, 0.2)
+    position: absolute
+    bottom: 0
+    left: 0
+    text-align: right
+    width: 100%
+    height: auto
 
-  &__leftlogo
+  &__left-logo
     font-family: 'EuropeExt', sans-serif
     font-weight: 700
     font-size: 20px
     color: #fff
     text-transform: uppercase
     position: relative
-    padding: 5px 0
-    padding-right: 50px
+    padding: 5px 50px 5px 0
     margin: 0
 
     &::before
@@ -122,35 +148,46 @@
 
 
   &__right
-    width: calc(50% - 4px)
+    width: calc(50% - 5px)
     height: auto
-    margin: 0 auto
+    margin-left: 5px
     background-image: url(./bg/application-right.jpg)
     background-repeat: no-repeat
     background-position: center
     background-size: cover
 
-  &__rightBgOpasity
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    width: 100%;
+  &__right-title
+    width: 100%
+    height: auto
 
-  &__rightSubTitle
+  &__right-bg-opasity
+    background-color: rgba(0, 0, 0, 0.5)
+    height: 100%
+    width: 100%
+    position: relative
+
+
+  &__right-sub-title
     margin: 0
-    padding: 20px 0
+    padding: 20px 0 20px 50px
     font-family: 'Arial', sans-serif
     font-weight: 400
     font-size: 24px
     line-height: 30px
     color: #fff
     text-transform: uppercase
-    padding-left: 50px
 
-  &__rightList
-    padding-bottom: 154px
+  &__right-list
+    margin-bottom: 170px
+    width: 100%
+    height: auto
 
-  &__rightItem
-    display: block
+  &__right-item
+    position: relative
+
+  &__text-right
+    margin: 0
+    display: inline-block
     font-family: 'Arial', sans-serif
     font-weight: 400
     font-size: 14px
@@ -158,44 +195,43 @@
     text-transform: uppercase
     background-color: #01983b
     margin-bottom: 5px
-    padding: 3px 0
-    padding-left: 50px
+    padding: 3px 50px 3px 50px
     position: relative
 
-    &:first-child
-      margin-right: 27%
-    &:nth-child(2)
-      margin-right: 62%
-    &:nth-child(3)
-      margin-right: 59%
     &::before,
     &::after
       content: ''
       position: absolute
       display: block
-      width: 100px
+      width: 50px
       height: 100%
-      background-color: rgba(1, 152, 59, 0.2)
-      right: -95px
-      top: 0
-    &::after
       background-color: rgba(1, 152, 59, 0.4)
-      margin-right: 48px
-      width: 55px
+      right: -35px
+      top: 0
+    &::before
+      background-color: rgba(1, 152, 59, 0.2)
+      right: -70px
+      width: 75px
 
-  &__rightLogobg
+  &__right-logo-bg
     background-color: rgba(255, 255, 255, 0.2)
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: auto
+    display: block
 
-  &__rightlogo
+  &__right-logo
     font-family: 'EuropeExt', sans-serif
     font-weight: 700
     font-size: 20px
     color: #fff
     text-transform: uppercase
     position: relative
-    padding: 5px 0
-    padding-left: 79px
+    padding: 5px 0 5px 79px
     margin: 0
+
     &::before
       content: ''
       position: absolute
@@ -207,61 +243,68 @@
       background-position: center
       width: 19px
       height: 16px
+
   &__list
     width: 100%
     height: auto
-    padding: 0 50px
+    padding: 0 30px
     box-sizing: border-box
 
   &__categories
     display: flex
     justify-content: space-between
     flex-wrap: wrap
+    list-style-type: none
+    margin: 0
+    padding: 0
+    width: 100%
+    height: auto
 
-  &__categoriesItem
+  &__categories-item
     text-align: center
+    width: calc(100% / 6)
 
     &:nth-child(even)
       margin-top: 50px
 
-  &__rotateBorder
-    width: 150px
-    height: 150px
+  &__rotate-border
+    width: 100%
+    height: 190px
     margin: 0 auto
     position: relative
-    background-image: url(./bg/pattern.png)
-    background-repeat: repeat
+    background-image: url("./bg/bg-romb.png")
+    background-repeat: no-repeat
     background-size: auto
     background-position: center
-    background-color: #f2f5f6
+
 
     &::before
-      content: ''
-      position: absolute
-      width: 110px
-      height: 110px
-      top: 10px
-      left: 10px
-      border: 10px solid #019a3e
-      border-radius: 20px
-      transform-origin: center
-      -webkit-transform: rotate(45deg)
-      -ms-transform: rotate(45deg)
-      transform: rotate(45deg)
-      box-shadow: -1px -1px 0px 3px #8e9091 inset
+      // content: ''
+      // position: absolute
+      // width: 110px
+      // height: 110px
+      // top: 10px
+      // left: 10px
+      // border: 10px solid #019a3e
+      // border-radius: 30px
+      // transform-origin: center
+      // -webkit-transform: rotate(45deg)
+      // -ms-transform: rotate(45deg)
+      // transform: rotate(45deg)
+      // box-shadow: -1px -1px 0px 3px #8e9091 inset
 
-  &__categoriesBg
+  &__categories-bg
     width: 100%
     height: 100%
     display: flex
     align-items: center
 
-  &__categoriesImg
+  &__categories-img
     width: 50%
-    height: 50%
+    height: auto
     margin: 0 auto
 
-  &__categoriesDesc
+  &__categories-desc
     font-family: 'Arial', sans-serif
     font-weight: 700
     font-size: 14px
